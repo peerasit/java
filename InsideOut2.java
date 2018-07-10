@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class InsideOut2 {
 
+//add comment to test git
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.next();
