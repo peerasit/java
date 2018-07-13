@@ -26,27 +26,21 @@ public class SpellChecking2 {
         for (int i = 0; i < k; i++) {
             String word = sc.next();
             int max = Integer.MIN_VALUE;
-            int pos = -1;
-            boolean same = false;
+            int pos = 0;
+            
             for (int j = 0; j < vocabs.length; j++) {
-                if (word.equals(vocabs[j])) {
-                    System.out.println(word);
-                    same = true;
-                    break;
-                }
-
-                if (countMatch(vocabs[j], word) > max) {
-                    max = countMatch(vocabs[j], word);
+                int count = countMatch(word, vocads[j]) ;
+                if(count > max){
+                    max = count;
                     pos = j;
                 }
-
+               
             }
 
-            if (!same) {
+             System.out.println(vocabs[pos]);
+               
 
-                System.out.println(vocabs[pos]);
-
-            }
+            
 
         }
 
