@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+public class sam {
+
+    public static void main(String[] args) {
+        
+        //|x1y2 + x2y3 + x3y1 - y1x2 - y2x3 - y3x1|/2
+        
+        
+        Scanner sc = new Scanner(System.in);
+        final int n = sc.nextInt();
+        
+        int[] posX = new int[3];
+        int[] posY = new int[3];
+        for (int k = 1; k < n - 3; k++) {
+            for (int j = k+1; j <= n - 1; j++) {
+                for (int i = j + 1; i <= n; i++) {
+                    System.out.println(k+" "+j+" "+i);
+                }
+            }
+        }
+        
+        double area = Math.abs((pos[1][]*pos[2][])/2);
+    }
+}
