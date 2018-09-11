@@ -184,6 +184,44 @@ class Person {
  *
  * @author student
  */
+class Employee extends Person{
+    private double salary = 0;
+    private int work_length = 0;
+}
+    public Employee(){
+        
+    }
+public Employee(name:String){
+    
+}
+public Employee(name:String,sex:char){
+    
+}
+public Employee(name:String,age:int){
+    
+}
+public Employee(name:String,sex:char,age:int){
+    
+}
+public Employee(name:String,sex:char,age:int,height:double,weight:double,single:boolean){
+    
+}
+public Employee(name:String,sex:char,age:int,height:double,weight:double,single:boolean,salary:double,work_length:int){
+    
+}
+public void setSalary(salary:double){
+    
+}
+public void setWorkLength(work_length:int){
+    
+}
+public double getSalary(){
+    return salary;
+}
+public int getWorkLength(){
+    return work_length;
+}
+
 public class CompanyApp {
     public static void main(String[] args){
         Person p = new Person();
